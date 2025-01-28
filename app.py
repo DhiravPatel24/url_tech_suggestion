@@ -46,7 +46,7 @@ def extract_company_description(url):
     return company_description
 
 def extract_company_technology(url):
-    api_key = "0fe0b1c2-9db3-4ff5-abfd-da04fe679043"
+    api_key = "b33663da-3dcb-4680-9b6d-690e5622b568"
     url = f"https://api.builtwith.com/v21/api.json?KEY={api_key}&LOOKUP={url}"
 
     try:
