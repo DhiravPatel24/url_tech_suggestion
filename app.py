@@ -203,6 +203,12 @@ def extract_base_domain(url):
     parsed_url = urlparse(url)
     return f"{parsed_url.scheme}://{parsed_url.netloc}"
 
+@app.route('/')
+def home():
+    print("Home route accessed")
+    return "Hello Welcome to python server"
+
+
 @app.route('/company_info', methods=['POST'])
 def get_company_info():
     url = request.json.get('url')
