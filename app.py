@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 llm = ChatGroq(
     groq_api_key="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",
-    model="llama3-8b-8192",
+    model="deepseek-r1-distill-llama-70b",
     temperature=0.2,
 )
 
