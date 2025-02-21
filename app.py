@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 llm = ChatGroq(
     groq_api_key="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",
-    model="deepseek-r1-distill-llama-70b",
+    model="llama3-8b-8192",
     temperature=0.2,
 )
 
@@ -46,7 +46,7 @@ def extract_company_description(url):
     return company_description
 
 def extract_company_technology(url):
-    api_key = "b33663da-3dcb-4680-9b6d-690e5622b568"
+    api_key = "0fe0b1c2-9db3-4ff5-abfd-da04fe679043"
     url = f"https://api.builtwith.com/v21/api.json?KEY={api_key}&LOOKUP={url}"
 
     try:
